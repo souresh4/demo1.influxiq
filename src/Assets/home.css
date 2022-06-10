@@ -1,0 +1,268 @@
+
+body{
+    background: #ebecf0;
+ 
+}
+
+.Wrapper{
+   display: flex !important;
+   width: 100vw !important;
+   min-height:100vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.Container{
+    padding: 0 !important;
+    background: #ebecf0;
+    max-width: 95%;
+    border-radius: 5px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+}
+
+
+/* ------------ Right Block Section ------------ */
+.Container .rightBlock{
+    width: 80%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.Container .rightBlock .searchSection{
+   padding: 16px;
+   box-shadow: none;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.Container .rightBlock .searchSection .searchbar{
+    padding:0px;
+    margin: 0px;
+}
+
+ /* .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after{
+    display: none !important;
+}
+  */
+
+  .Container  .css-1ptx2yq-MuiInputBase-root-MuiInput-root:after{
+    display: none;
+}
+
+.Container  .css-1ptx2yq-MuiInputBase-root-MuiInput-root::before{
+    display: none;
+}
+
+.Container  .css-i4bv87-MuiSvgIcon-root{ padding-top: 14px!important;}
+
+
+.Container .pProfile{
+    padding: 15px;
+    box-shadow: none !important;
+}
+
+.Container .cardSection{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px; 
+    box-shadow: none !important;
+    align-items: center;
+}
+
+.Container .cardSection .cards{
+    background-color: #f3f4f6;
+    margin: 10px;
+    width: 180px;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Container .cardSection .cards:hover{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px 5px #d0d0d0;
+    cursor: pointer;
+}
+
+.Container .cardSection .cards .avatar{
+    margin: 0 auto;
+    width: 100px;
+    height:100px
+}
+
+.Container .cardSection  .addP{
+    text-align: center;
+    align-items: center;
+}
+
+.Container .cardSection  .addP .Addicon{
+    color: #1fe9b5;
+    font-size: 35px;
+
+}
+
+
+/* -------------- left block section ------------- */
+
+.Container .leftBlock{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17%;
+}
+
+
+.Container .leftBlock .needhelp{
+    padding: 20px;
+    margin: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center;
+    background-image: url(../img/msgbckgrounf.png);
+    background-size: 62px 62px;
+    background-position: 204px 1px;
+    background-repeat: no-repeat;
+}
+
+.Container .leftBlock .needhelp .contactbtn{
+   background: #1fe9b5 !important;
+}
+
+.Container .leftBlock .menu{
+    padding: 30px;
+ }
+
+ .Container .leftBlock .menu .menulist{
+    list-style: none;
+  
+ }
+
+ .Container .leftBlock .menu .menulist li{
+   padding: 5px;
+   display: flex;
+   align-items: end;
+ }
+
+ /* ---------------------------------------- */
+
+ /* -------------- availablePatients ------- */
+
+ .Container  .AvailablePatients{
+     margin: 15px 0;
+     flex-wrap: wrap;
+     padding: 10px;
+     box-shadow: none !important;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     margin: 0 auto;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .Container  .AvailablePatients .progress{
+    width: 30%;
+    box-shadow: none !important;
+}
+
+.Container .AvailablePatients .Upgradebtn{
+    box-shadow: none !important;
+}
+
+.Container .AvailablePatients .Upgradebtn .upbtn{
+    box-shadow: none !important;
+
+
+}
+
+
+
+ /* ------------------------------------------- */
+
+ /* ###################### Responsive ############## */
+
+ @media screen and (max-width:1314px){
+
+    .Container .rightBlock {
+        width: 72% !important;
+    }
+
+    .Container .leftBlock {
+        width: 25% !important;
+    }
+ }
+
+
+ @media screen and (max-width:1199px){
+
+   
+
+    .menulist{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menulist li{
+       align-items: flex-end !important;
+    }
+
+    .menulist h4{
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .Container {
+       flex-direction: column !important;
+    }
+
+    .Container .rightBlock {
+        margin: 5px 0;
+        width: 97% !important;
+    }
+
+    .Container .leftBlock {
+        width: 100% !important;
+    }
+
+    .Container .pProfile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Container .Container .cardSection .cards {
+        margin: 10px auto !important;
+    }
+   
+ }
+
+
+ @media screen and (max-width:564px){
+ .Container .cardSection .cards {
+    margin: 10px;
+    width: 100%;
+ }
+
+ .menulist{
+     padding-left: 0px;
+ }
+}
